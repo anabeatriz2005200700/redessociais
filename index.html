@@ -1,39 +1,74 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Tema da sua base de dados]</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Relatório de Transporte</h1>
-        <nav>
-            <a href="index.html">Mundo</a>
-            <a href="#">Minha escola</a>
-        </nav>
-    </header>
-    <main class="graficos-section">
-        <section id="graficos-container" class="graficos-container">
-            <!--<p class="graficos-container__texto">
-                Cerca de 38% das mais de 7 bilhões de pessoas do mundo estão no
-          mercado de trabalho, ou seja, aproximadamente 3 bilhões de
-          trabalhadores. Do total de trabalhadores, ⅔ deles (67%) precisam de
-          transporte para o trabalho. Dessa forma, uma porcentagem bastante
-          relevante (os outros 34%) estão em teletrabalho ou moram perto do
-          trabalho, de forma a não precisar de deslocamento. Entre os que
-          precisam de transporte, o tempo necessário para isso é de cerca de 54
-          minutos. Esse tempo pode ser utilizado para ouvir PodCasts ou
-          videoaulas, caso o transporte seja público ou por aplicativo. Um
-          serviço que pode ser oferecido é o de Podcasts com duração compatível
-          com esse tempo de deslocamento.
-            </p>-->
-        </section>
-    </main>
-    <footer>
-        <p>Desenvolvido por Stive</p>
-    </footer>
-<script type="module" src="graficos/informacoesGlobais.js"></script>
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bg-color: #222831;
+  --primary-color: #DDDDDD;
+  --secundary-color: #F05454;
+  --font: Grandstander;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+  }
+
+  header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: var(--bg-color);
+    font-weight: 700;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--bg-color);
+    margin: 0 2rem 1rem 0rem;
+    font-size: 1.2rem;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+    transform: scale(0.90);
+    transition: transform 0.1s;
+  }
+
+  .graficos-container__texto {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--secundary-color) solid 2px;
+  }
+
+  #graficos-container {
+    margin: 5rem;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+  }
+
+  span {
+    font-weight: bold;
+    color: var(--secundary-color);
+  }
